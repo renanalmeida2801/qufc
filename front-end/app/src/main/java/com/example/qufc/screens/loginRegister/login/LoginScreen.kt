@@ -35,7 +35,6 @@ import com.example.qufc.screens.loginRegister.components.TextFieldLogin
 @Composable
 fun LoginScreen(onEnterClick: (User) -> Unit, onNotRegistered: () -> Unit) {
     val fontModak = FontFamily(Font(R.font.modak))
-
     var login: String by remember { mutableStateOf("") }
     var senha: String by remember { mutableStateOf("") }
 

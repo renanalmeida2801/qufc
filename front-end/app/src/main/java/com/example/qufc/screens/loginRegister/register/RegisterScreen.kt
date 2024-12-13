@@ -33,6 +33,7 @@ import com.example.qufc.screens.loginRegister.components.TextFieldLogin
 
 val fontModak = FontFamily(Font(R.font.modak))
 val fontInter = FontFamily((Font(R.font.inter_regular)))
+val fontEsteban = FontFamily(Font(R.font.esteban_regular))
 
 @Composable
 fun RegisterScreen(onContinueClick: (User) -> Unit, onHasAccount: (User) -> Unit) {

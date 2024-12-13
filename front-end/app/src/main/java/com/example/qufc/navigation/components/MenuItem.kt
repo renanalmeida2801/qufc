@@ -15,7 +15,6 @@ data class MenuItem(
 @Composable
 fun getMenuItems(): List<MenuItem> {
 
-
     return listOf(
         MenuItem(
             tittle = "Simulados",
@@ -45,7 +44,7 @@ fun getMenuItems(): List<MenuItem> {
         MenuItem(
             tittle = "Configurações",
             route = Route.Settings.route,
-            icon = painterResource(id = R.drawable.exiticon)
+            icon = painterResource(id = R.drawable.settingsicon)
         ),
         MenuItem(
             tittle = "Ajuda",
@@ -57,7 +56,5 @@ fun getMenuItems(): List<MenuItem> {
             route = "sair",
             icon = painterResource(id = R.drawable.exiticon)
         ),
-
         )
-
 }
