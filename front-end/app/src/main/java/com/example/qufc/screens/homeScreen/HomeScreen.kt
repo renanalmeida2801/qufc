@@ -13,21 +13,21 @@ import androidx.compose.ui.tooling.preview.Preview
 
 
 @Composable
-fun HomeScreen() {
-
-
-    Surface(color = Color.White) {
-
-        Column(
-            modifier = Modifier.fillMaxSize(),
-            verticalArrangement = Arrangement.Center,
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
-            Text(text = "HOME PAGE", color = Color.Black)
+    fun HomeScreen() {
+    
+    
+        Surface(color = Color.White) {
+    
+            Column(
+                modifier = Modifier.fillMaxSize(),
+                verticalArrangement = Arrangement.Center,
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Text(text = "HOME PAGE", color = Color.Black)
+            }
         }
+    
     }
-
-}
 
 @Preview
 @Composable
