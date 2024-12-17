@@ -45,7 +45,7 @@ fun getMenuItems(): List<MenuItem> {
         MenuItem(
             tittle = "Configurações",
             route = Route.Settings.route,
-            icon = painterResource(id = R.drawable.exiticon)
+            icon = painterResource(id = R.drawable.settingsicon)
         ),
         MenuItem(
             tittle = "Ajuda",

@@ -4,12 +4,10 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
-import androidx.compose.material.icons.filled.MoreVert
 import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material3.DrawerState
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
@@ -73,14 +71,6 @@ fun UpperMenu(drawerState: DrawerState, navController: NavController){
                     .clickable { navController.navigate(Route.NotificationsScreen.route) },
                 tint = Color.White,
             )
-
-            IconButton(onClick = {isExpanded = true}) {
-                Icon(
-                    imageVector = Icons.Default.MoreVert,
-                    contentDescription = "menu três pontinhos",
-                    tint = Color.White
-                    )
-            }
         }
     )
 }
