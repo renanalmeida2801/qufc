@@ -1,6 +1,7 @@
 package com.example.qufc.navigation
 
-sealed class Route(val route: String) {
+sealed class
+Route(val route: String) {
     data object HomeScreen: Route(route = "home")
     data object LoginScreen: Route(route = "login")
     data object RegisterScreen: Route(route = "register")
@@ -17,4 +18,5 @@ sealed class Route(val route: String) {
     data object Favorites:Route(route = "favorites")
     data object ComplementaryHours:Route(route = "complementaryHours")
     data object Help:Route(route = "help")
+    object NotificationSettingsScreen : Route(route = "notificationSettings")
 }

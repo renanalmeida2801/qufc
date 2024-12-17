@@ -14,10 +14,6 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.example.qufc.screens.loginRegister.continueRegister.ContinueRegisterScreen
-import com.example.qufc.screens.homeScreen.HomeScreen
-import com.example.qufc.screens.loginRegister.login.LoginScreen
-import com.example.qufc.screens.loginRegister.register.RegisterScreen
 import com.example.qufc.navigation.components.BottonBarCustom
 import com.example.qufc.navigation.components.NavDrawer
 import com.example.qufc.navigation.components.UpperMenu
@@ -30,9 +26,15 @@ import com.example.qufc.screens.Notifications.NotificationScreen
 import com.example.qufc.screens.Settings.SettingsScreen
 import com.example.qufc.screens.StudyGroup.StudyGroupScreen
 import com.example.qufc.screens.chat.ChatScreen
+import com.example.qufc.screens.homeScreen.HomeScreen
+import com.example.qufc.screens.loginRegister.continueRegister.ContinueRegisterScreen
+import com.example.qufc.screens.loginRegister.login.LoginScreen
+import com.example.qufc.screens.loginRegister.register.RegisterScreen
 import com.example.qufc.screens.profile.ProfileScreen
 import com.example.qufc.screens.search.SearchScreen
+import com.example.qufc.screens.settings.notifications.NotificationSettingsScreen
 import com.example.qufc.screens.upload.UploadScreen
+
 
 @Composable
 fun NavGraph(startDestination: String) {
@@ -107,7 +109,7 @@ fun NavGraph(startDestination: String) {
                     NotificationScreen()
                 }
                 composable(Route.Settings.route) {
-                    SettingsScreen()
+                    SettingsScreen(navController = navController)
                 }
                 composable(Route.HistoryScreen.route) {
                     HistoryScreen()
@@ -127,11 +129,13 @@ fun NavGraph(startDestination: String) {
                 composable(Route.ExercisesScreen.route){
                     ExercisesScreen()
                 }
+                composable(Route.NotificationSettingsScreen.route) {
+                    NotificationSettingsScreen(navController = navController)
+                }
+
             }
         }
     }
-
-
 }
 
 
